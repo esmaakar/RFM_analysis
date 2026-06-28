@@ -1,4 +1,43 @@
+"""
+Customer Segmentation & RFM Analysis Project (FLO Dataset)
 
+This project performs customer segmentation using RFM (Recency, Frequency, Monetary) analysis
+on an e-commerce dataset.
+
+Main objectives:
+- Data preprocessing and feature engineering
+- Exploratory data analysis (EDA)
+- Creating total order and monetary values
+- Converting date columns to datetime format
+- Performing RFM analysis
+- Scoring customers based on behavior
+- Segmenting customers using rule-based mapping
+- Merging segmentation results with customer data
+- Creating target customer groups for marketing campaigns
+- Exporting selected customer IDs to CSV files
+
+Segments used:
+- champions
+- loyal_customers
+- potential_loyalists
+- new_customers
+- promising
+- need_attention
+- about_to_sleep
+- at_risk
+- cant_loose
+- hibernating
+
+Outputs:
+- High-value loyal female customers list
+- Discount-targeted customers list (new & at-risk segments)
+
+Tools:
+- Python
+- Pandas
+- Datetime
+- RFM Analysis techniques
+"""
 import pandas as pd
 import datetime as dt
 pd.set_option('display.max_columns', None)
